@@ -59,7 +59,7 @@ def my_form_post():
                                                                      filename=f"{filename}{file_format}")
         print("[+] Converted & Downloaded")
 
-        return send_file(f'Downloads\\{filename}{file_format}', as_attachment=True)
+        return send_file(f'Downloads/{filename}{file_format}', as_attachment=True)
 
 
 if __name__ == "__main__":
